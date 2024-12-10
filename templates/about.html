@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        
+        <div class="col-md-4 d-flex justify-content-center align-items-center">
+            <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Profile Picture" class="profile-image img-fluid shadow-lg">
+        </div>
+
+        
+        <div class="col-md-8">
+            <h2 class="text-center mb-4">Tentang Saya</h2>
+            <p class="lead text-justify">Saya adalah mahasiswa Teknik Informatika yang memiliki semangat dan dedikasi tinggi dalam belajar dan mengembangkan diri di dunia teknologi. Sejak kecil, saya sudah tertarik dengan dunia digital, dan seiring waktu, ketertarikan saya berkembang ke arah desain web. Saya memiliki cita-cita untuk menjadi seorang web designer hebat yang mampu menciptakan desain-desain web yang tidak hanya menarik tetapi juga fungsional dan user-friendly.</p>
+            
+            <p class="lead text-justify">Dengan latar belakang di bidang teknologi, saya terus mengasah keterampilan desain web saya, mempelajari tren terbaru dalam desain UI/UX, serta terus mengikuti perkembangan teknologi web. Saya percaya bahwa desain web yang baik bukan hanya soal tampilan, tetapi juga tentang bagaimana pengunjung dapat berinteraksi dengan situs secara mudah dan menyenangkan.</p>
+            
+            <p class="lead text-justify">Ke depannya, saya ingin menggabungkan pengetahuan saya di bidang teknik informatika dengan kreativitas dalam desain, untuk menciptakan pengalaman web yang luar biasa bagi pengguna di seluruh dunia.</p>
+        </div>
+    </div>
+</div>
+
+<style>
+    .profile-image {
+        width: 100%; 
+        height: auto; 
+        max-width: 400px; 
+        border-radius: 15px; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
+    }
+
+    h2 {
+        color: #2c3e50;
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        color: #34495e;
+    }
+
+    .lead {
+        font-size: 1.1rem;
+        color: #7f8c8d;
+    }
+
+    
+    .col-md-4 {
+        padding-top: 70px; 
+        padding-bottom: 20px; 
+    }
+
+    .d-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+</style>
+
+{% endblock %}

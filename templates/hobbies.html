@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2 class="text-center">Hobi Saya</h2>
+<p class="text-center">Berikut adalah beberapa hobi saya yang saya minati saat mengisi waktu luang</p>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/hobby1.jpg') }}" alt="Hobi 1" class="img-fluid rounded shadow-lg">
+                <div class="card-body">
+                    <h5 class="card-title">Traveling</h5>
+                    <p class="card-text">Saya sering traveling bersama teman teman saya disaat hari libur. Menjelejahi daerah baru, Mempelejari budaya baru, dan Mengunjungi Wisata Alam adalah hal yang paling sering kami lakukan.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/hobby2.jpg') }}" alt="Hobi 2" class="img-fluid rounded shadow-lg">
+                <div class="card-body">
+                    <h5 class="card-title">Bermain Futsal</h5>
+                    <p class="card-text">Berolahraga juga harus tentunya. Setiap minggu saya rutin bermain futsal agar badan tetap fit untuk menjalani hidup yang pahit.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/hobby3.jpg') }}" alt="Hobi 3" class="img-fluid rounded shadow-lg">
+                <div class="card-body">
+                    <h5 class="card-title">Billiard</h5>
+                    <p class="card-text">Salah satu hobi saya adalah Billiard. Saya sering menghabiskan akhir pekan dengan bermain billiard bersama teman teman saya, memicu canda dan tawa di setiap permainannya.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+     h2 {
+        color: #2c3e50;
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+</style>
+{% endblock %}

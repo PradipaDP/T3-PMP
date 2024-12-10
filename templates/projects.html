@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2 class="text-center">Project Saya</h2>
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/Mojo.jpg') }}" alt="Projects 1 " class="img-fluid rounded shadow-lg">
+            <div class="card-body">
+                <h5 class="card-title">Mojo PetCare UI/UX Designer</h5>
+                <p class="card-text">Sebagai UI/UX Designer untuk aplikasi Mojo Petcare, saya bertanggung jawab untuk merancang antarmuka pengguna yang intuitif dan menyenangkan, dengan tujuan meningkatkan pengalaman pengguna dalam mengakses berbagai layanan yang disediakan aplikasi ini. Mojo Petcare adalah aplikasi yang menyediakan layanan konsultasi dengan dokter hewan, grooming, serta menawarkan produk-produk kebutuhan hewan peliharaan dari daerah sekitar pengguna..</p>
+                <a href="https://www.figma.com/design/VDt5LDnLRj0smRz8dpaKeK/Untitled-(Copy)?node-id=0-1&t=xWJt4LDmtEXe0LjM-1" class="btn btn-primary" target="_blank">Lihat Detail</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/MedTrack.jpg') }}" alt="Projects 2 " class="img-fluid rounded shadow-lg">
+            <div class="card-body">
+                <h5 class="card-title">MedTrack UI/UX Designer (On Progress)</h5>
+                <p class="card-text">Sebagai UI/UX Designer untuk aplikasi MedTrack, saya bertanggung jawab untuk merancang pengalaman pengguna yang sederhana, intuitif, dan efektif untuk memudahkan pengguna dalam mengingat jadwal minum obat mereka. MedTrack adalah aplikasi pengingat jadwal minum obat yang dirancang untuk membantu pengguna mengelola dosis obat secara tepat waktu, memastikan mereka tetap teratur dan aman dalam menjalani pengobatan.</p>
+                <a href="https://www.figma.com/design/H17usQwCQ1l2Bhkwa81S91/Untitled?node-id=0-1&t=48WUjrutNYpxb1Oa-1" class="btn btn-primary" target="_blank">Lihat Detail</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+                <h5 class="card-title">Project 3</h5>
+                <p class="card-text">To be Announced</p>
+                <a href="#" class="btn btn-primary">Lihat Detail</a>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<style>
+     h2 {
+        color: #2c3e50;
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+</style>
+{% endblock %}
